@@ -1,0 +1,6 @@
+node_modules/
+hooks/
+.migration_backup/
+.update_backup/
+.vscode/
+platforms/

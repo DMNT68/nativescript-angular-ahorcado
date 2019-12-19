@@ -1,0 +1,15 @@
+.ahorcado-img {
+    width: "150";
+    height: "150";
+}
+
+.botones {
+    margin: 3;
+    font-size: 18;
+    font-weight: 500;
+    border-radius: 100%;
+}
+
+.padding {
+    padding: 10;
+}

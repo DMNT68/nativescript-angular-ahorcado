@@ -1,0 +1,22 @@
+TextField {
+    border-color: #c2bdbd;
+    color: #c2bdbd;
+    placeholder-color: #c2bdbd;
+    font-size: 16;
+    border-width: 0.5;
+    background-color: #1b384a;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: 10 10 10 10;
+}
+
+.padding {
+    padding: 25;
+}
+
+Button {
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 18s;
+    height: 50;
+}

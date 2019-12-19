@@ -1,0 +1,20 @@
+<ActionBar class="action-bar color-actionbar" title="Juego Ahorcado">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="regresar()"></NavigationButton>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout>
+        <StackLayout>
+            <Image class="ahorcado-img" width="200" height="200" src="~/assets/img/{{intentos}}.png"></Image>
+            <Label class="h3 text-center m-y-10 label-white" text="Intentos {{intentos}} / 9"></Label>
+        </StackLayout>
+
+        <StackLayout>
+            <Label class="h1 text-center m-y-10 label-white" [text]="palabraOculta"></Label>
+        </StackLayout>
+
+        <WrapLayout class="padding">
+            <Button class="btn btn-primary text-center botones" width="50" height="50" [text]="letra" (tap)="comprobar( letra )" *ngFor="let letra of letras"></Button>
+        </WrapLayout>
+    </StackLayout>
+</ScrollView>

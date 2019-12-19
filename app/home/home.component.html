@@ -1,0 +1,9 @@
+<ActionBar class="action-bar color-actionbar">
+    <Label class="action-bar-title" text="Juego Ahorcado"></Label>
+</ActionBar>
+<StackLayout class="padding">
+    <Label textWrap="true" class="h2 text-center label-white" text="Bienvenido, descubre la palabra oculta."></Label>
+    <Label textWrap="true" class="h3 label-white" text="Te recomiendo juegar con 2 o mas personas, presta tu celular a un amigo para que adivine la palabra."></Label>
+    <TextField hint="Ingresa la palabra para jugar" [(ngModel)]="palabra"></TextField>
+    <Button class="btn btn-primary" text="Empezar" (tap)="irJuego()"></Button>
+</StackLayout>
