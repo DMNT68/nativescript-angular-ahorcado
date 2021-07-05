@@ -22,9 +22,8 @@ export class JuegoComponent {
             'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     
     constructor(private router: RouterExtensions, private js:JuegoService){
-      console.log('palabra inyectada',this.palabra);
-        this.palabra = js.palabra;
-        this.palabraOculta = '_ '.repeat(this.palabra.length);
+      this.palabra = js.palabra;
+      this.palabraOculta = '_ '.repeat(this.palabra.length);
     }
 
     comprobar(letra) {
@@ -80,6 +79,6 @@ export class JuegoComponent {
       }
 
       regresar(){
-        this.router.navigate([''],{transition:{name:'slideRight'}});
+        this.router.navigate([''],{clearHistory:true ,transition:{name:'slideRight'}});
       }
 }
